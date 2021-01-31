@@ -5,7 +5,7 @@
 
 ## Description
 
-A RESTful API which allows to perform CRUD operations on musics.
+A RESTful API which allows to perform CRUD operations on musics with mongo database.
 
 ## Installation
 
