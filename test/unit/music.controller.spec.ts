@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { MusicController } from './music.controller';
+import { MusicController } from '../../src/music/music.controller';
 
 
 describe('Music Controller', () => {

@@ -1,23 +1,16 @@
-import { Schema, Prop, MongooseModule, SchemaFactory } from '@nestjs/mongoose';
+import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 @Schema()
 export class MusicEntity extends Document {
   @Prop()
-  name: string;
+  readonly title: string;
 
   @Prop()
-  brand: string;
+  readonly singer: string;
 
   @Prop([String])
-  flavors: string[];
+  readonly platform: string[];
 }
 
-export const CoffeeSchema = SchemaFactory.createForClass(MusicEntity);
-
-MongooseModule.forFeature([
-  {
-    name: MusicEntity.name,
-    schema: CoffeeSchema,
-  },
-]);
+export const MusicSchema = SchemaFactory.createForClass(MusicEntity);

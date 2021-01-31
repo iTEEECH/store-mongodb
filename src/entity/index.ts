@@ -1,1 +1,1 @@
-export * from './music/music.dto';
+export * from './music/music.entity';
